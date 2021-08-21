@@ -22,15 +22,40 @@ function App() {
       console.log('onDrop');
 
       const files = Array.from(e.dataTransfer.files);
-      const images = files.map((file)=>{
+      
+      //Method 2 - using  FileReader 
+
+      files.map(file=> {
         const {name,size} = file;
-        return {
-          name,
-          size, 
-          preview: URL.createObjectURL(file)
-        }
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend =()=>{ 
+          const preview = reader.result;
+          const image = {
+            name,
+            size,
+            preview};
+            
+
+            setImages((prevImages)=>{
+              return[...prevImages, image];
+            });
+        };
+        return null;
       });
-      setImages(images)
+
+
+      //Method 1 - using  URL.createObjectURL(file)
+
+      // const images = files.map((file)=>{
+      //   const {name,size} = file;
+      //   return {
+      //     name,
+      //     size, 
+      //     preview: URL.createObjectURL(file)
+      //   }
+      // });
+      // setImages(images)
     },
   }
   console.log(images)
