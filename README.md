@@ -1,6 +1,8 @@
 
 ![image](https://user-images.githubusercontent.com/25887704/130321592-4d6173a1-73c9-44e0-a0b3-398f6564984a.png)
 
+
+#### Drag and Drop using JavaScript with React library. It's Drag and Drop, as well as an image preview, so the user can preview the images right after dragging them to the site.
 #### Saving: https://loremflickr.com/ nice site to random images !
 # Getting Started with Create React App
 
