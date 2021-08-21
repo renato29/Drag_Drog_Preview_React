@@ -1,6 +1,6 @@
 
 ![image](https://user-images.githubusercontent.com/25887704/130321592-4d6173a1-73c9-44e0-a0b3-398f6564984a.png)
-Mockdata from https://loremflickr.com/ nice site to random sites !
+Saving: https://loremflickr.com/ nice site to random images !
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
